@@ -1,15 +1,15 @@
 class MingleMetrics < Formula
   desc "Mingle metrics - client for mingle api"
   homepage ""
-  url "https://github.com/PortalP3/mingle_metrics/releases/download/v0.0.6/mingle_metrics_0.0.6_darwin_amd64.tar.gz"
-  version "0.0.6"
-  sha256 "a5ceb517c188bb2ada3454d61dbe806cae7ae724d1823a97cd611e221df1d4a5"
+  url "https://github.com/PortalP3/mingle_metrics/releases/download/v0.0.7/mingle_metrics_0.0.7_darwin_amd64.tar.gz"
+  version "0.0.7"
+  sha256 "3a0722eace2ee59eeab4a6e4f26780791c177222843a6b33100ecd5e8d18aab2"
 
   def install
-    bin.install "program"
+    bin.install "mingle_metrics"
   end
 
   test do
-    system "#{bin}/program --version"
+    system "#{bin}/mingle_metrics -v"
   end
 end
